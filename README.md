@@ -10,11 +10,11 @@ There is a potential linking issue when compiling this project on Windows for th
 
 ## Reproduce
 
-1. Clone the repository on a x86_64 Windows machine. This bug was reproduced on a machine with the following information:
+1. Install Rust
+2. Clone the repository on a x86_64 Windows machine. This bug was reproduced on a machine with the following information:
     - OS: `Windows 10 Pro`
     - Version: `22H2`
     - OS Build: `19045.4894`
     - System type: `64-bit operating system, x64-based processor`
-2. Run: `cargo build --target x86_64-pc-windows-gnu --release > C:\colton\log.txt 2>&1`
-    - Change the location of `log.txt`
-3. You will see the error in `log.txt`
+3. Run: `cargo build --target x86_64-pc-windows-gnu --release > .\log.txt 2>&1`
+4. You will see the error in `log.txt`
