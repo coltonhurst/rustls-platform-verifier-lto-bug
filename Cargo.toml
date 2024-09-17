@@ -1,0 +1,15 @@
+[package]
+name = "rustls-platform-verifier-lto-bug"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.12.7", features = [
+    "rustls-tls-manual-roots",
+], default-features = false }
+rustls-platform-verifier = "0.3.4"
+tokio = { version = "1.40.0", features = ["full"] }
+env_logger = "0.11.5"
+
+[profile.release]
+lto = "thin"
