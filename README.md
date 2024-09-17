@@ -2,7 +2,7 @@
 
 This repository was adapted from [here](https://github.com/Thomas-Avery/test-rustls-platform-verifier). The goal of this repository is to provide an example project showcasing a potential bug in the [rustls-platform-verifier crate](https://github.com/rustls/rustls-platform-verifier), to aid in identifying and fixing a potential bug.
 
-GitHub Issue Link: {will be added once filed}
+GitHub Issue Link: https://github.com/rustls/rustls-platform-verifier/issues/141
 
 ## The Issue
 
